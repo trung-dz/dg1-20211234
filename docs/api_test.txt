@@ -1,0 +1,52 @@
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.5 Python/3.14.4
+Date: Wed, 30 Sep 2026 02:25:34 GMT
+Content-Type: application/json
+Content-Length: 37
+Connection: close
+
+{"status":"ok","student":"20211234"}
+
+---
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.5 Python/3.14.4
+Date: Wed, 30 Sep 2026 02:25:34 GMT
+Content-Type: application/json
+Content-Length: 442
+Connection: close
+
+[{"diem":8.5,"ho_ten":"V\u0169 Minh Hi\u1ebfu","id":1,"lop":"CT2801","mssv":"SV001"},{"diem":9.0,"ho_ten":"Tr\u1ea7n Ho\u00e0ng Quy\u1ec1n","id":2,"lop":"CT2801","mssv":"SV002"},{"diem":6.5,"ho_ten":"Tr\u1ea7n M\u1ea1nh C\u01b0\u1eddng","id":3,"lop":"CT2801","mssv":"SV003"},{"diem":7.0,"ho_ten":"Ph\u1ea1m Gia Huy","id":4,"lop":"CT2801","mssv":"SV004"},{"diem":5.5,"ho_ten":"V\u0169 T\u1ea5n T\u00e0i","id":5,"lop":"CT2801","mssv":"SV005"}]
+
+---
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.5 Python/3.14.4
+Date: Wed, 30 Sep 2026 02:25:34 GMT
+Content-Type: application/json
+Content-Length: 442
+Connection: close
+
+[{"diem":8.5,"ho_ten":"V\u0169 Minh Hi\u1ebfu","id":1,"lop":"CT2801","mssv":"SV001"},{"diem":9.0,"ho_ten":"Tr\u1ea7n Ho\u00e0ng Quy\u1ec1n","id":2,"lop":"CT2801","mssv":"SV002"},{"diem":6.5,"ho_ten":"Tr\u1ea7n M\u1ea1nh C\u01b0\u1eddng","id":3,"lop":"CT2801","mssv":"SV003"},{"diem":7.0,"ho_ten":"Ph\u1ea1m Gia Huy","id":4,"lop":"CT2801","mssv":"SV004"},{"diem":5.5,"ho_ten":"V\u0169 T\u1ea5n T\u00e0i","id":5,"lop":"CT2801","mssv":"SV005"}]
+
+---
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.1.5 Python/3.14.4
+Date: Wed, 30 Sep 2026 02:25:34 GMT
+Content-Type: application/json
+Content-Length: 42
+Connection: close
+
+{"error":"diem must be between 0 and 10"}
+
+---
+
+HTTP/1.1 201 CREATED
+Server: Werkzeug/3.1.5 Python/3.14.4
+Date: Wed, 30 Sep 2026 02:25:34 GMT
+Content-Type: application/json
+Content-Length: 74
+Connection: close
+
+{"diem":9.0,"ho_ten":"Nguyen Van F","id":6,"lop":"CT2801","mssv":"SV006"}
