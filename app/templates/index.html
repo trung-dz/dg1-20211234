@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>DG1 – Trương Thành Trung – {{ student_mssv }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Danh sách Sinh viên (DG1 – Trương Thành Trung – {{ student_mssv }})</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>MSSV</th>
+                <th>Họ tên</th>
+                <th>Lớp</th>
+                <th>Điểm</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for s in students %}
+            <tr>
+                <td>{{ s.id }}</td>
+                <td>{{ s.mssv }}</td>
+                <td>{{ s.ho_ten }}</td>
+                <td>{{ s.lop }}</td>
+                <td>{{ s.diem }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
